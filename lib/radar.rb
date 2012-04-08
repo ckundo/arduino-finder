@@ -1,9 +1,8 @@
 module Radar
-  class Shack
+  class RadioShack
     @base_uri = 'http://www.radioshack.com'
     
     def self.scan(zip = 10012, product_id = 12268262)
-      
       query = {:productId => product_id, :zip => zip}
       resp = HTTParty.get("#{@base_uri}/product/inStoreAvail.jsp", :query => query, :format => :html)
       doc = Nokogiri::HTML(resp)
