@@ -35,7 +35,7 @@
 <body>
   <%= yield %>
   <script type="text/javascript">
-    store = new Store();
+    store = new Store(); // this takes an optional params hash {zip: 'xxxxx'}
     store.fetchLocations(function(locations) {
       console.log(locations);
       mapper = new Mapper(locations);
