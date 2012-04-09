@@ -1,13 +1,12 @@
 module Radar
   class RadioShack
-    @base_uri = 'http://www.radioshack.com'
-    
-    def self.scan(zip = 10012, product_id = 12268262)
-      query = {:productId => product_id, :zip => zip}
-      resp = HTTParty.get("#{@base_uri}/product/inStoreAvail.jsp", :query => query, :format => :html)
+    @locations = []
+
+    def self.near(zip = 10012)
+      resp = HTTParty.get("http://www.radioshack.com/product/inStoreAvail.jsp", 
+      :query => {:productId => 12268262, :zip => zip}, :format => :html)
       doc = Nokogiri::HTML(resp)
       
-      @locations = []
       doc.css('a').each do |link|
         href = link['href'] || ''
         if href.include?('/map/index.jsp?')
@@ -17,23 +16,24 @@ module Radar
           @locations << loc
         end
       end
-
+      
       return @locations
     end
     
     def self.location_href_to_hash(href)
-      options = {
-        :name => href.match(/locName=.*&/)[0].split('=')[1].split('&')[0],
-        :latitude => href.match(/latitude=.*&/)[0].split('=')[1].split('&')[0],
-        :longitude => href.match(/longitude=.*&/)[0].split('=')[1].split('&')[0],
-        :address1 => href.match(/address1=.*&/)[0].split('=')[1].split('&')[0],
-        :city => href.match(/city=.*&/)[0].split('=')[1].split('&')[0],
-        :zip => href.match(/postalCode=.*&/)[0].split('=')[1].split('&')[0],
-        :state => href.match(/stateCode=.*&/)[0].split('=')[1].split('&')[0],
-        :phone => href.match(/phone=.*&/)[0].split('=')[1].split('&')[0]
-      }
+      matches = href.scan(/[\?|&][\w]+\=(.*?)(?=&)/).flatten!
+      Rails.logger.info matches
       
-      return options 
+      return {
+        :name => matches[0], 
+        :city => matches[2],
+        :phone => matches[3],
+        :state => matches[4],
+        :zip => matches[5],
+        :latitude => matches[6],
+        :longitude => matches[7],
+        :address1 => matches[8],
+      }
     end
   end
 end
