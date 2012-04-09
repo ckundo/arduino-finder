@@ -6,14 +6,19 @@ describe StoresController do
 
     before(:each) do
       Radar::RadioShack.stub(:scan) {[store]}
-      Geocoder.stub_chain(:search, :first, :coordinates).and_return([73.2,-132.2]) 
-      Geocoder.stub_chain(:search, :first, :postal_code).and_return('11231')
+      #Geocoder.stub_chain(:search, :first, :coordinates).and_return([73.2,-132.2]) 
+      #Geocoder.stub_chain(:search, :first, :postal_code).and_return('11231')
       Store.stub(:near) { [store] }
     end
 
     it 'sets a default location for the user' do
       get :index
-      assigns(:location).should eql({"latitude" => 73.2, "longitude" => -132.2})
+      assigns(:location).should eql({"latitude" => 40.7250632 , "longitude" =>  -73.9976946 })
+    end
+    
+    it 'should geolocate by zipcode' do
+      get :index, { :zip => '91105' }
+      assigns(:location)['latitude'].should < 40     
     end
     
     it 'assigns nearby stores to locations' do

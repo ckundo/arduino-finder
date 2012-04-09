@@ -15,7 +15,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 08 Apr 2012 15:50:39 GMT
+      - Sun, 08 Apr 2012 17:30:16 GMT
       server:
       - Apache/2.0.64 (Unix)
       cache-control:
@@ -28,13 +28,13 @@ http_interactions:
       - CP="PHY ONL CAO CURa ADMa DEVa TAIa PSAa PSDa IVAo IVDo CONo HISa TELo OTPo
         OUR DELa STP BUS UNI COM NAV INT DEM OTC",policyref="/w3c/p3p.xml"
       set-cookie:
-      - browser_id=174569824093; expires=Wednesday, 06-Apr-2022 15:50:40 GMT; path=/
-      - JSESSIONID=XfDpPBzPtThhgQPC3l1dZYZrZBvPQ0DVkrqkxRdYvvy5Hy55tt1N!1113323155;
+      - browser_id=174584264263; expires=Wednesday, 06-Apr-2022 17:30:16 GMT; path=/
+      - JSESSIONID=KKDVPBLLqd7246yPbcTKL2xDDS2TVwMmyGtCpbr16yPZynMhpb2c!-370077005;
         path=/
-      - browser_id=174569824093; expires=Wednesday, 06-Apr-2022 15:50:40 GMT; path=/
-      - browser_id=174569824093; expires=Wednesday, 06-Apr-2022 15:50:40 GMT; path=/
-      - browser_id=174569824093; expires=Wednesday, 06-Apr-2022 15:50:40 GMT; path=/
-      - browser_id=174569824093; expires=Wednesday, 06-Apr-2022 15:50:40 GMT; path=/
+      - browser_id=174584264263; expires=Wednesday, 06-Apr-2022 17:30:16 GMT; path=/
+      - browser_id=174584264263; expires=Wednesday, 06-Apr-2022 17:30:16 GMT; path=/
+      - browser_id=174584264263; expires=Wednesday, 06-Apr-2022 17:30:16 GMT; path=/
+      - browser_id=174584264263; expires=Wednesday, 06-Apr-2022 17:30:16 GMT; path=/
       x-powered-by:
       - Servlet/2.5 JSP/2.1
       vary:
@@ -986,7 +986,7 @@ http_interactions:
         Type Not Defined';\ns.prop1='Category Not Defined';\nvar s_code=s.t(); if
         (s_code)document.write(s_code);\n</script>\n<!-- ## GSI Analytics End ##  -->\n</body>\n</html>\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:42 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:17 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=122+FLATBUSH+AVE%2C+%2C+BROOKLYN%2C+NY+11217&language=en&sensor=false
@@ -1010,9 +1010,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:40 GMT
+      - Sun, 08 Apr 2012 17:30:17 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:40 GMT
+      - Mon, 09 Apr 2012 17:30:17 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1060,7 +1060,7 @@ http_interactions:
         \        },\n         \"partial_match\" : true,\n         \"types\" : [ \"street_address\"
         ]\n      }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:42 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:17 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=528+FIFTH+AVE%2C+%2C+BROOKLYN%2C+NY+11215&language=en&sensor=false
@@ -1084,9 +1084,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:40 GMT
+      - Sun, 08 Apr 2012 17:30:17 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:40 GMT
+      - Mon, 09 Apr 2012 17:30:17 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1129,7 +1129,7 @@ http_interactions:
         : -73.99010588029151\n               }\n            }\n         },\n         \"types\"
         : [ \"street_address\" ]\n      }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:42 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:17 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=254+7TH+AVE%2C+%2C+BROOKLYN%2C+NY+11215&language=en&sensor=false
@@ -1153,9 +1153,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:40 GMT
+      - Sun, 08 Apr 2012 17:30:17 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:40 GMT
+      - Mon, 09 Apr 2012 17:30:17 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1198,7 +1198,7 @@ http_interactions:
         : -73.98110608029153\n               }\n            }\n         },\n         \"types\"
         : [ \"street_address\" ]\n      }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:17 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=118+COURT+ST%2C+%2C+BROOKLYN%2C+NY+11201&language=en&sensor=false
@@ -1222,9 +1222,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:40 GMT
+      - Sun, 08 Apr 2012 17:30:17 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:40 GMT
+      - Mon, 09 Apr 2012 17:30:17 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1268,7 +1268,7 @@ http_interactions:
         \        },\n         \"types\" : [ \"street_address\" ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:17 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=457+FULTON+STREET%2C+%2C+BROOKLYN%2C+NY+11201&language=en&sensor=false
@@ -1292,9 +1292,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:40 GMT
+      - Sun, 08 Apr 2012 17:30:18 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:40 GMT
+      - Mon, 09 Apr 2012 17:30:18 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1329,12 +1329,16 @@ http_interactions:
         : \"11201\",\n               \"short_name\" : \"11201\",\n               \"types\"
         : [ \"postal_code\" ]\n            }\n         ],\n         \"formatted_address\"
         : \"457 Fulton Mall, Brooklyn, NY 11201, USA\",\n         \"geometry\" : {\n
-        \           \"location\" : {\n               \"lat\" : 40.69146090,\n               \"lng\"
-        : -73.9868280\n            },\n            \"location_type\" : \"ROOFTOP\",\n
+        \           \"bounds\" : {\n               \"northeast\" : {\n                  \"lat\"
+        : 40.69130450,\n                  \"lng\" : -73.98693680\n               },\n
+        \              \"southwest\" : {\n                  \"lat\" : 40.69129840,\n
+        \                 \"lng\" : -73.9869410\n               }\n            },\n
+        \           \"location\" : {\n               \"lat\" : 40.69130450,\n               \"lng\"
+        : -73.98693680\n            },\n            \"location_type\" : \"RANGE_INTERPOLATED\",\n
         \           \"viewport\" : {\n               \"northeast\" : {\n                  \"lat\"
-        : 40.69280988029150,\n                  \"lng\" : -73.98547901970851\n               },\n
-        \              \"southwest\" : {\n                  \"lat\" : 40.69011191970850,\n
-        \                 \"lng\" : -73.98817698029151\n               }\n            }\n
+        : 40.69265043029150,\n                  \"lng\" : -73.98558991970850\n               },\n
+        \              \"southwest\" : {\n                  \"lat\" : 40.68995246970850,\n
+        \                 \"lng\" : -73.98828788029151\n               }\n            }\n
         \        },\n         \"types\" : [ \"street_address\" ]\n      },\n      {\n
         \        \"address_components\" : [\n            {\n               \"long_name\"
         : \"457\",\n               \"short_name\" : \"457\",\n               \"types\"
@@ -1371,7 +1375,7 @@ http_interactions:
         \        },\n         \"partial_match\" : true,\n         \"types\" : [ \"street_address\"
         ]\n      }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:18 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=110+MONTAGUE+ST%2C+%2C+BROOKLYN%2C+NY+11201&language=en&sensor=false
@@ -1395,9 +1399,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:40 GMT
+      - Sun, 08 Apr 2012 17:30:18 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:40 GMT
+      - Mon, 09 Apr 2012 17:30:18 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1441,7 +1445,7 @@ http_interactions:
         \        },\n         \"types\" : [ \"street_address\" ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:18 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=114+FULTON+ST%2C+%2C+NEW+YORK%2C+NY+10038&language=en&sensor=false
@@ -1465,9 +1469,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:41 GMT
+      - Sun, 08 Apr 2012 17:30:18 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:41 GMT
+      - Mon, 09 Apr 2012 17:30:18 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1511,7 +1515,7 @@ http_interactions:
         \        },\n         \"types\" : [ \"street_address\" ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:18 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=280+BROADWAY%2C+%2C+NEW+YORK%2C+NY+10007&language=en&sensor=false
@@ -1535,9 +1539,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:41 GMT
+      - Sun, 08 Apr 2012 17:30:18 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:41 GMT
+      - Mon, 09 Apr 2012 17:30:18 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1611,10 +1615,43 @@ http_interactions:
         : -74.00383371970850\n               },\n               \"southwest\" : {\n
         \                 \"lat\" : 40.71286431970850,\n                  \"lng\"
         : -74.00653168029150\n               }\n            }\n         },\n         \"types\"
-        : [ \"point_of_interest\", \"parking\", \"establishment\" ]\n      }\n   ],\n
-        \  \"status\" : \"OK\"\n}\n"
+        : [ \"point_of_interest\", \"parking\", \"establishment\" ]\n      },\n      {\n
+        \        \"address_components\" : [\n            {\n               \"long_name\"
+        : \"280\",\n               \"short_name\" : \"280\",\n               \"types\"
+        : [ \"street_number\" ]\n            },\n            {\n               \"long_name\"
+        : \"Broadway\",\n               \"short_name\" : \"Broadway\",\n               \"types\"
+        : [ \"route\" ]\n            },\n            {\n               \"long_name\"
+        : \"Lower Manhattan\",\n               \"short_name\" : \"Lower Manhattan\",\n
+        \              \"types\" : [ \"neighborhood\", \"political\" ]\n            },\n
+        \           {\n               \"long_name\" : \"Manhattan\",\n               \"short_name\"
+        : \"Manhattan\",\n               \"types\" : [ \"sublocality\", \"political\"
+        ]\n            },\n            {\n               \"long_name\" : \"New York\",\n
+        \              \"short_name\" : \"New York\",\n               \"types\" :
+        [ \"locality\", \"political\" ]\n            },\n            {\n               \"long_name\"
+        : \"New York\",\n               \"short_name\" : \"New York\",\n               \"types\"
+        : [ \"administrative_area_level_2\", \"political\" ]\n            },\n            {\n
+        \              \"long_name\" : \"New York\",\n               \"short_name\"
+        : \"NY\",\n               \"types\" : [ \"administrative_area_level_1\", \"political\"
+        ]\n            },\n            {\n               \"long_name\" : \"United
+        States\",\n               \"short_name\" : \"US\",\n               \"types\"
+        : [ \"country\", \"political\" ]\n            },\n            {\n               \"long_name\"
+        : \"10038\",\n               \"short_name\" : \"10038\",\n               \"types\"
+        : [ \"postal_code\" ]\n            }\n         ],\n         \"formatted_address\"
+        : \"280 Broadway, New York, NY 10038, USA\",\n         \"geometry\" : {\n
+        \           \"bounds\" : {\n               \"northeast\" : {\n                  \"lat\"
+        : 40.71344020,\n                  \"lng\" : -74.00689880000002\n               },\n
+        \              \"southwest\" : {\n                  \"lat\" : 40.71343060,\n
+        \                 \"lng\" : -74.00691770000002\n               }\n            },\n
+        \           \"location\" : {\n               \"lat\" : 40.71343060,\n               \"lng\"
+        : -74.00689880000002\n            },\n            \"location_type\" : \"RANGE_INTERPOLATED\",\n
+        \           \"viewport\" : {\n               \"northeast\" : {\n                  \"lat\"
+        : 40.71478438029150,\n                  \"lng\" : -74.00555926970851\n               },\n
+        \              \"southwest\" : {\n                  \"lat\" : 40.71208641970850,\n
+        \                 \"lng\" : -74.00825723029153\n               }\n            }\n
+        \        },\n         \"partial_match\" : true,\n         \"types\" : [ \"street_address\"
+        ]\n      }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:18 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=1232+FULTON+STREET%2C+%2C+BROOKLYN%2C+NY+11216&language=en&sensor=false
@@ -1638,9 +1675,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Sun, 08 Apr 2012 15:50:41 GMT
+      - Sun, 08 Apr 2012 17:30:18 GMT
       expires:
-      - Mon, 09 Apr 2012 15:50:41 GMT
+      - Mon, 09 Apr 2012 17:30:18 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1684,5 +1721,5 @@ http_interactions:
         \        },\n         \"types\" : [ \"street_address\" ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}\n"
     http_version: '1.1'
-  recorded_at: Sun, 08 Apr 2012 15:50:43 GMT
+  recorded_at: Sun, 08 Apr 2012 17:30:18 GMT
 recorded_with: VCR 2.0.1

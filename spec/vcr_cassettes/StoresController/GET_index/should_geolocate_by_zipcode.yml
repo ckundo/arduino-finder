@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=91105&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Sun, 08 Apr 2012 17:31:05 GMT
+      expires:
+      - Mon, 09 Apr 2012 17:31:05 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [\n      {\n         \"address_components\" :
+        [\n            {\n               \"long_name\" : \"91105\",\n               \"short_name\"
+        : \"91105\",\n               \"types\" : [ \"postal_code\" ]\n            },\n
+        \           {\n               \"long_name\" : \"Pasadena\",\n               \"short_name\"
+        : \"Pasadena\",\n               \"types\" : [ \"locality\", \"political\"
+        ]\n            },\n            {\n               \"long_name\" : \"Los Angeles\",\n
+        \              \"short_name\" : \"Los Angeles\",\n               \"types\"
+        : [ \"administrative_area_level_2\", \"political\" ]\n            },\n            {\n
+        \              \"long_name\" : \"California\",\n               \"short_name\"
+        : \"CA\",\n               \"types\" : [ \"administrative_area_level_1\", \"political\"
+        ]\n            },\n            {\n               \"long_name\" : \"United
+        States\",\n               \"short_name\" : \"US\",\n               \"types\"
+        : [ \"country\", \"political\" ]\n            }\n         ],\n         \"formatted_address\"
+        : \"Pasadena, CA 91105, USA\",\n         \"geometry\" : {\n            \"bounds\"
+        : {\n               \"northeast\" : {\n                  \"lat\" : 34.1745550,\n
+        \                 \"lng\" : -118.1458830\n               },\n               \"southwest\"
+        : {\n                  \"lat\" : 34.12393490,\n                  \"lng\" :
+        -118.1860970\n               }\n            },\n            \"location\" :
+        {\n               \"lat\" : 34.14060820,\n               \"lng\" : -118.16785430\n
+        \           },\n            \"location_type\" : \"APPROXIMATE\",\n            \"viewport\"
+        : {\n               \"northeast\" : {\n                  \"lat\" : 34.1745550,\n
+        \                 \"lng\" : -118.1458830\n               },\n               \"southwest\"
+        : {\n                  \"lat\" : 34.12393490,\n                  \"lng\" :
+        -118.1860970\n               }\n            }\n         },\n         \"types\"
+        : [ \"postal_code\" ]\n      }\n   ],\n   \"status\" : \"OK\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Sun, 08 Apr 2012 17:31:05 GMT
+recorded_with: VCR 2.0.1
