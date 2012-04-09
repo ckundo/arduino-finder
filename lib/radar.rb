@@ -8,11 +8,10 @@ module Radar
       doc = Nokogiri::HTML(resp)
       
       doc.css('a').each do |link|
-        href = link['href'] || ''
-        if href.include?('/map/index.jsp?')
-          options = location_href_to_hash(href)
-          loc = Store.find(:first, :conditions => options) || 
-                Store.create(options)
+        options = parse_link(link)
+        if options
+          loc = (Store.find(:first, :conditions => options) || 
+                Store.create(options))
           @locations << loc
         end
       end
@@ -20,20 +19,22 @@ module Radar
       return @locations
     end
     
-    def self.location_href_to_hash(href)
-      matches = href.scan(/[\?|&][\w]+\=(.*?)(?=&)/).flatten!
-      Rails.logger.info matches
-      
-      return {
-        :name => matches[0], 
-        :city => matches[2],
-        :phone => matches[3],
-        :state => matches[4],
-        :zip => matches[5],
-        :latitude => matches[6],
-        :longitude => matches[7],
-        :address1 => matches[8],
-      }
+    def self.parse_link(link)
+      href = link['href']
+      if href.include?('/map/index.jsp?')
+        params = Hash[*href.scan(/[\?|&](\w+)\=(.*?)(?=&)/).flatten]
+
+        options = {
+          :name => params[:storeLoc], 
+          :city => params[:city],
+          :phone => params[:phone],
+          :state => params[:stateCode],
+          :zip => params[:postalCode],
+          :latitude => params[:latitude],
+          :longitude => params[:longitude],
+          :address1 => params[:address1],
+        }
+      end
     end
   end
 end
