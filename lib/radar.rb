@@ -7,27 +7,33 @@ module Radar
       resp = HTTParty.get("#{@base_uri}/product/inStoreAvail.jsp", :query => query, :format => :html)
       doc = Nokogiri::HTML(resp)
       
-      locations = []
+      @locations = []
       doc.css('a').each do |link|
         href = link['href'] || ''
         if href.include?('/map/index.jsp?')
-          name = href.match(/locName=.*&/)[0].split('=')[1].split('&')[0]
-          latitude = href.match(/latitude=.*&/)[0].split('=')[1].split('&')[0]
-          longitude = href.match(/longitude=.*&/)[0].split('=')[1].split('&')[0]
-          address1 = href.match(/address1=.*&/)[0].split('=')[1].split('&')[0]
-          city = href.match(/city=.*&/)[0].split('=')[1].split('&')[0]
-          zip = href.match(/postalCode=.*&/)[0].split('=')[1].split('&')[0]
-          state = href.match(/stateCode=.*&/)[0].split('=')[1].split('&')[0]
-          phone = href.match(/phone=.*&/)[0].split('=')[1].split('&')[0]
-          
-          
-          loc = Store.find_by_name(name) || Store.create(:name => name, :latitude => latitude, :longitude => longitude, :address1 => address1,
-                 :city => city, :zip => zip, :state => state, :phone => phone)
-          locations << loc
+          options = location_href_to_hash(href)
+          loc = Store.find(:first, :conditions => options) || 
+                Store.create(options)
+          @locations << loc
         end
       end
 
-      return locations
+      return @locations
+    end
+    
+    def self.location_href_to_hash(href)
+      options = {
+        :name => href.match(/locName=.*&/)[0].split('=')[1].split('&')[0],
+        :latitude => href.match(/latitude=.*&/)[0].split('=')[1].split('&')[0],
+        :longitude => href.match(/longitude=.*&/)[0].split('=')[1].split('&')[0],
+        :address1 => href.match(/address1=.*&/)[0].split('=')[1].split('&')[0],
+        :city => href.match(/city=.*&/)[0].split('=')[1].split('&')[0],
+        :zip => href.match(/postalCode=.*&/)[0].split('=')[1].split('&')[0],
+        :state => href.match(/stateCode=.*&/)[0].split('=')[1].split('&')[0],
+        :phone => href.match(/phone=.*&/)[0].split('=')[1].split('&')[0]
+      }
+      
+      return options 
     end
   end
 end
