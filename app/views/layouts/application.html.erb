@@ -35,12 +35,18 @@
 <body>
   <%= yield %>
   <script type="text/javascript">
-    store = new Store(); // this takes an optional params hash {zip: 'xxxxx'}
-    store.fetchLocations(function(locations) {
-      console.log(locations);
-      mapper = new Mapper(locations);
-      mapper.renderMap();
-    });
+    mapIt = function(position) {
+      geo = new Geo();
+      geo.fetchStores(position, function(locations) {
+        mapper = new Mapper(locations);
+        mapper.renderMap();
+      });
+    };
+    
+    locator = function() {
+      navigator.geolocation.getCurrentPosition(mapIt, function() {console.log('derp')});
+    };
+    locator();
   </script>
 </body>
 </html>

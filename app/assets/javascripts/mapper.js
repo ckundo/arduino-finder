@@ -1,6 +1,6 @@
 var Mapper = function(locations) {
   var map = {};
-  
+
   this.renderMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,

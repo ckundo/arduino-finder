@@ -1,15 +1,9 @@
-var Store = function(options) {
-  var url = '/stores.json';
-  var first = true;
+var Geo = function(options) {
 
-  for(var key in options) {
-    var delimeter = first ? '?' : '&';
-    url += delimeter;
-    url += key + "=" + options[key];
-    first = false;
-  }
-  
-  this.fetchLocations = function(callback) {
+  this.fetchStores = function(position, callback) {
+    url = '/stores.json?' + 'latitude=' + position.coords.latitude + '&longitude='
+    + position.coords.longitude;
+
     $.ajax({
       url: url,
       dataType: 'json',
