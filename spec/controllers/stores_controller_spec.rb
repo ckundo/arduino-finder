@@ -5,7 +5,7 @@ describe StoresController do
     let(:store) { stub_model(Store) }
 
     before(:each) do
-      Radar::RadioShack.stub(:scan) {[store]}
+      Radar::RadioShack.stub(:near) {[store]}
       #Geocoder.stub_chain(:search, :first, :coordinates).and_return([73.2,-132.2]) 
       #Geocoder.stub_chain(:search, :first, :postal_code).and_return('11231')
       Store.stub(:near) { [store] }
