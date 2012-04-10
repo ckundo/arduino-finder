@@ -9,7 +9,7 @@ class StoresController < ApplicationController
     coords = Geocoder.search(zip).first.coordinates 
     @location = {:latitude => coords[0], :longitude => coords[1]}
 
-    Radar::RadioShack.scan(zip)
+    Radar::RadioShack.near(zip)
     @stores = Store.near(zip)
 
     respond_to do |format|

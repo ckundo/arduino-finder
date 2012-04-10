@@ -15,7 +15,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Mon, 09 Apr 2012 23:42:58 GMT
+      - Tue, 10 Apr 2012 00:00:48 GMT
       server:
       - Apache/2.0.64 (Unix)
       cache-control:
@@ -28,13 +28,13 @@ http_interactions:
       - CP="PHY ONL CAO CURa ADMa DEVa TAIa PSAa PSDa IVAo IVDo CONo HISa TELo OTPo
         OUR DELa STP BUS UNI COM NAV INT DEM OTC",policyref="/w3c/p3p.xml"
       set-cookie:
-      - browser_id=151644347974; expires=Thursday, 07-Apr-2022 23:42:58 GMT; path=/
-      - JSESSIONID=GgkTPD0CbyYMdPZL3cqysJ8XHSq1LhXF2tLDwN1NrnqRRJTMbfPj!-806461218;
+      - browser_id=151646452634; expires=Friday, 08-Apr-2022 00:00:49 GMT; path=/
+      - JSESSIONID=PktPPD4QhgDz24j6mMHKtPZgTnKww7QYQJG4nT4jlXpcQ3yLlhMr!-1237215347;
         path=/
-      - browser_id=151644347974; expires=Thursday, 07-Apr-2022 23:42:58 GMT; path=/
-      - browser_id=151644347974; expires=Thursday, 07-Apr-2022 23:42:58 GMT; path=/
-      - browser_id=151644347974; expires=Thursday, 07-Apr-2022 23:42:58 GMT; path=/
-      - browser_id=151644347974; expires=Thursday, 07-Apr-2022 23:42:58 GMT; path=/
+      - browser_id=151646452634; expires=Friday, 08-Apr-2022 00:00:49 GMT; path=/
+      - browser_id=151646452634; expires=Friday, 08-Apr-2022 00:00:49 GMT; path=/
+      - browser_id=151646452634; expires=Friday, 08-Apr-2022 00:00:49 GMT; path=/
+      - browser_id=151646452634; expires=Friday, 08-Apr-2022 00:00:49 GMT; path=/
       x-powered-by:
       - Servlet/2.5 JSP/2.1
       vary:
@@ -986,7 +986,7 @@ http_interactions:
         Type Not Defined';\ns.prop1='Category Not Defined';\nvar s_code=s.t(); if
         (s_code)document.write(s_code);\n</script>\n<!-- ## GSI Analytics End ##  -->\n</body>\n</html>\n"
     http_version: '1.1'
-  recorded_at: Mon, 09 Apr 2012 23:42:58 GMT
+  recorded_at: Tue, 10 Apr 2012 00:00:49 GMT
 - request:
     method: get
     uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
@@ -1010,9 +1010,9 @@ http_interactions:
       content-type:
       - application/json; charset=UTF-8
       date:
-      - Mon, 09 Apr 2012 23:42:59 GMT
+      - Tue, 10 Apr 2012 00:00:49 GMT
       expires:
-      - Tue, 10 Apr 2012 23:42:59 GMT
+      - Wed, 11 Apr 2012 00:00:49 GMT
       cache-control:
       - public, max-age=86400
       server:
@@ -1027,5 +1027,374 @@ http_interactions:
       encoding: US-ASCII
       string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
     http_version: '1.1'
-  recorded_at: Mon, 09 Apr 2012 23:42:59 GMT
+  recorded_at: Tue, 10 Apr 2012 00:00:49 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:50 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:50 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:50 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:51 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:51 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:51 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=%2C+%2C+%2C++&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      date:
+      - Tue, 10 Apr 2012 00:00:51 GMT
+      expires:
+      - Wed, 11 Apr 2012 00:00:51 GMT
+      cache-control:
+      - public, max-age=86400
+      server:
+      - mafe
+      x-xss-protection:
+      - 1; mode=block
+      x-frame-options:
+      - SAMEORIGIN
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"results\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: '1.1'
+  recorded_at: Tue, 10 Apr 2012 00:00:51 GMT
 recorded_with: VCR 2.0.1
