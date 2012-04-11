@@ -2,15 +2,18 @@ require 'radar'
 
 class StoresController < ApplicationController
   def index
-    loc = request.location
-    default = loc.postal_code.empty? ? '10012' : loc.postal_code
-    zip = params['zip'] || default
-
-    coords = Geocoder.search(zip).first.coordinates 
-    @location = {:latitude => coords[0], :longitude => coords[1]}
-
-    Radar::RadioShack.near(zip)
-    @stores = Store.near(zip)
+    if !params[:latitude].blank? && !params[:longitude].blank?
+      @zip = Geocoder.search("#{params[:latitude]},#{params[:longitude]}"
+).first.postal_code
+      @stores = Store.near(@zip)
+    else
+      loc = request.location
+      @zip = loc.postal_code.empty? ? '10012' : loc.postal_code
+      coords = Geocoder.search(@zip).first.coordinates 
+    end
+    
+    Radar::RadioShack.near(@zip)
+    @stores = Store.near(@zip)
 
     respond_to do |format|
       format.html # index.html.erb

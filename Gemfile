@@ -19,7 +19,8 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'jasminerice'
+  gem 'cucumber'
+  gem 'jasmine'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'vcr'
