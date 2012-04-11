@@ -8,7 +8,7 @@ class StoresController < ApplicationController
       @stores = Store.near(@zip)
     else
       loc = request.location
-      @zip = loc.postal_code.empty? ? '10012' : loc.postal_code
+      @zip = (!loc || loc.postal_code.blank?) ? '10012' : loc.postal_code
       coords = Geocoder.search(@zip).first.coordinates 
     end
     
