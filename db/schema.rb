@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120329164718) do
+ActiveRecord::Schema.define(:version => 20120414185226) do
 
   create_table "inventories", :force => true do |t|
     t.integer  "product_id"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20120329164718) do
     t.string   "address2"
     t.string   "city"
     t.string   "state"
-    t.integer  "zip"
+    t.string   "zip"
     t.string   "url"
     t.string   "phone"
     t.datetime "created_at", :null => false
