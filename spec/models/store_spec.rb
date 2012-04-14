@@ -16,6 +16,13 @@ describe Store, :vcr do
     Store.create!(attributes)
   end
 
+  let(:location) do
+    {
+      :latitude => 74.01,
+      :longitude => -110.01
+    }
+  end
+
   describe '.full_address' do
     subject { store }
 
@@ -24,22 +31,27 @@ describe Store, :vcr do
     end
   end
 
-  describe '.find_or_create_by_location!' do
-    subject { Store.find_or_create_by_location!(location) }
-
-    context 'with lat and lng' do
-      let(:location) do
-        {
-          :latitude => 74.01,
-          :longitude => -110.01
-        }
+  describe '.extract_zip_from_params' do
+    subject { Store.extract_zip_from_params!(params) }
+    let(:zip) { '11231' }
+    context 'params are a zipcode' do
+      let(:params) do 
+        { :location => { :zip => zip } }
+      end 
+      it { should == zip }
+    end
+    context 'params are coordinates' do
+      let(:params) do 
+        { :location => {:latitude => 40.677280, :longitude => -74.009} }
       end
-      
-      context 'store exists' do
-        it do
-          puts Store.count
-        end
-        its (:zip) { should == attributes.fetch(:zip) }
+      it { should == zip }
+    end
+    context 'params are garbage' do
+      let(:params) do
+        { :location => {:foo => nil } }
+      end
+      it do
+        expect { subject }.to raise_error 
       end
     end
   end

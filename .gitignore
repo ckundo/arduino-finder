@@ -14,3 +14,5 @@
 /log/*.log
 /tmp
 /spec/vcr_cassettes
+*.swp
+.DS_Store

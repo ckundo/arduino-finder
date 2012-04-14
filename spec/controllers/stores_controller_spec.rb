@@ -9,19 +9,24 @@ describe StoresController do
       Store.stub(:near) { [store] }
     end
 
-    it 'it assigns the zip code for a user specified set of coordinates' do
-      get :index, :latitude => "35.0522", :longitude => "-118.2428"
+    it 'assigns a zip given lat/lng params' do
+      get :index, :location => { 
+        :latitude => "35.0522", 
+        :longitude => "-118.2428"
+      }
       assigns(:zip).should eql("93501")
     end
 
-    it 'it assigns the zip code for a user specified zip code' do
-      get :index, :zip => "91105"
+    it 'assigns a zip given zip param' do
+      get :index, :location => {
+        :zip => "91105"
+      }
       assigns(:zip).should eql("91105")
     end
 
-    it 'sets a default zipcode if none is specified' do
+    it 'assigns a default zip' do
       get :index
-      assigns(:zip).should eql("10012")
+      assigns(:zip).should eql("11231")
     end
     
     it 'assigns nearby stores to locations' do
