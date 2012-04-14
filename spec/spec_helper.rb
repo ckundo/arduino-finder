@@ -3,6 +3,7 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
+require 'capybara/rails'
 require 'vcr'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
@@ -15,7 +16,11 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
   #c.configure_rspec_metadata!
 #end
 
+Capybara.default_selector = :css
+Capybara.default_wait_time = 5
+
 RSpec.configure do |config|
+  config.include Capybara::DSL, :type => :acceptance
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:

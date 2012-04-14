@@ -19,12 +19,10 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'cucumber'
-  gem 'jasmine'
-  gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'vcr'
   gem 'fakeweb'
+  gem 'capybara'
 end
 
 group :production do
